@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="container">
+        <h1 class="mt-5">Eliminar Persona</h1>
+        <form method="post" class="mt-4">
+            {% csrf_token %}
+            <div class="form-group">
+                <label for="id">ID de Persona:</label>
+                <input type="text" class="form-control" id="id" name="id">
+            </div>
+            <button type="submit" class="btn btn-danger">Eliminar</button>
+        </form>
+    </div>
+{% endblock %}
